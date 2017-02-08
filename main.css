@@ -7,17 +7,29 @@ a, p, ul {
   list-style: none;
   text-align: center;
 }
+body {
+  background-image: url(concrete_seamless.png);
+}
 h1, h3 {
   text-align: center;
 }
+h1 a {
+  font-size: 34px;
+  text-decoration: none;
+}
 .container {
-  min-width: 95%;
+  min-width: 70%;
   padding-top: 10px;
 }
 .site-detail-container {
-  padding: 10px 0 10px 0;
   border-bottom-style: groove;
+  padding: 10px 0 10px 0;
 }
-#page-header p {
+#page-header {
+  border-bottom-style: groove;
   padding-top: 5px;
+}
+#page-header a {
+  text-decoration: none;
+  padding-left: 30px;
 }
