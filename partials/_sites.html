@@ -1,1 +1,16 @@
-<h1>{{site.name}}</h1>
+<div class="site-detail-page-container col-md-12">
+  <h2>{{site.name}}</h2>
+  <h4>{{site.type}} | <a href="{{site.website_url}}">Link to Website</a> | <a href="{{site.github_url}}">Link to Github</a></h4>
+  <div class="">
+    <h4>Dev Specifics</h4>
+    <ul ng-repeat="detail in site.details">
+      <li>{{detail.text}}</li>
+    </ul>
+  </div>
+  <div class="">
+    <h4>To Work On</h4>
+    <ul ng-repeat="improvement in site.improvements">
+      <li>{{improvement.text}}</li>
+    </ul>
+  </div>
+</div>
