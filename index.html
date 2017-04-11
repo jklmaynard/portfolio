@@ -3,112 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>Portfolio | James Maynard</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
+    <script src="app.js"></script>
+    <script src="services/sites.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/main.css">
   </head>
-  <body>
+  <body ng-app="portfolio">
     <div class="container">
       <div class="col-md-12" id="page-header">
-        <h1>Portfolio | James Maynard</h1>
+        <a href="#/home"><h1>Portfolio | James Maynard</h1></a>
         <p>
           <a href="https://www.linkedin.com/in/jklmaynard">linkedIn</a>
           <a href="https://github.com/jklmaynard">GitHub</a>
           <a href="https://twitter.com/jkirkmaynard">@jkirkmaynard</a>
         </p>
       </div>
-      <div class="col-md-12" id="source-code-div">
-        <!-- TAVERN BOOKS -->
-        <div class="site-detail-container row">
-          <h1><a href="http://www.tavernbooks.org">Tavern Books Press</a></h1>
-          <h3 style="text-align:center;">Ruby on Rails</h3>
-          <div class="col-md-6">
-            <h3>Website</h3>
-            <a href="http://www.tavernbooks.org"><p>www.tavernbooks.org</p></a>
-          </div>
-          <div class="col-md-6">
-            <h3>Source on Github</h3>
-            <a href="https://github.com/ceciliaxyang/tavern-books"><p>github.com/ceciliaxyang/tavern-books</p></a>
-          </div>
-        </div>
-        <!-- POETRY SITE -->
-        <div class="site-detail-container row">
-          <h1><a href="http://www.jamesmaynardpoetry.com">Personal Poetry Website</a></h1>
-          <h3 style="text-align:center;">jQuery, HTML, some node.js</h3>
-          <div class="col-md-6">
-            <h3>Website</h3>
-            <a href="http://www.jamesmaynardpoetry.com"><p>www.jamesmaynardpoetry.com</p></a>
-          </div>
-          <div class="col-md-6">
-            <h3>Source on Github</h3>
-            <a href="https://github.com/jklmaynard/poetry_site"><p>github.com/jklmaynard/poetry_site</p></a>
-          </div>
-        </div>
-        <!-- FUN WITTH NUMBERS -->
-        <div class="site-detail-container row">
-          <h1><a href="https://jklmaynard.github.io/fun-with-numbers/">Fun With Numbers: Collatz, Binary Cocktails</a></h1>
-          <h3 style="text-align:center;">jQuery and javascript</h3>
-          <div class="col-md-6">
-            <h3>Website on gh-pages</h3>
-            <a href="https://jklmaynard.github.io/fun-with-numbers/"><p>jklmaynard.github.io/fun-with-numbers</p></a>
-          </div>
-          <div class="col-md-6">
-            <h3>Source on Github</h3>
-            <a href="https://github.com/jklmaynard/fun-with-numbers"><p>github.com/jklmaynard/fun-with-numbers</p></a>
-          </div>
-        </div>
-        <!-- MOTHER FOUCAULT'S -->
-        <div class="site-detail-container row">
-          <h1><a href="">Mother Foucault's Bookstore (WIP)</a></h1>
-          <h3 style="text-align:center;">Angular with Rails</h3>
-          <div class="col-md-6">
-            <h3>Website on Heroku</h3>
-            <a href="http://www.motherfoucaultsbookshop.com/"><p>www.motherfoucaultsbookshop.com/</p></a>
-          </div>
-          <div class="col-md-6">
-            <h3>Source on Github</h3>
-            <a href="https://github.com/jklmaynard/mother-foucaults"><p>github.com/jklmaynard/mother-foucaults</p></a>
-          </div>
-        </div>
-        <!-- TRINITY UNITED -->
-        <div class="site-detail-container row">
-          <h1><a href="https://gentle-forest-86148.herokuapp.com/#/home">Trinity United Methodist (WIP)</a></h1>
-          <h3 style="text-align:center;">Angular with Rails</h3>
-          <div class="col-md-6">
-            <h3>Website on Heroku</h3>
-            <a href="https://gentle-forest-86148.herokuapp.com/#/home"><p>gentle-forest-86148.herokuapp.com/#/home</p></a>
-          </div>
-          <div class="col-md-6">
-            <h3>Source on Github</h3>
-            <a href="https://github.com/jklmaynard/trinity-church"><p>github.com/jklmaynard/trinity-church</p></a>
-          </div>
-        </div>
-        <!-- BOOKLIST -->
-        <div class="site-detail-container row">
-          <h1><a href="https://fast-atoll-17293.herokuapp.com/">BookList</a></h1>
-          <h3 style="text-align:center;">Ruby on Rails</h3>
-          <div class="col-md-6">
-            <h3>Website on Heroku</h3>
-            <a href="https://fast-atoll-17293.herokuapp.com/"><p>fast-atoll-17293.herokuapp.com/</p></a>
-          </div>
-          <div class="col-md-6">
-            <h3>Source on Github</h3>
-            <a href="https://github.com/jklmaynard/book-list"><p>github.com/jklmaynard/book-list</p></a>
-          </div>
-        </div>
-        <!-- THIS PORTFOLIO -->
-        <div class="site-detail-container row">
-          <h1><a href="https://jklmaynard.github.io/portfolio/">This Portfolio</a></h1>
-          <h3 style="text-align:center;">HTML and CSS</h3>
-          <div class="col-md-6">
-            <h3>Website on gh-pages</h3>
-            <a href="https://jklmaynard.github.io/portfolio/"><p>jklmaynard.github.io/portfolio</p></a>
-          </div>
-          <div class="col-md-6">
-            <h3>Source on Github</h3>
-            <a href="https://github.com/jklmaynard/portfolio"><p>github.com/jklmaynard/portfolio</p></a>
-          </div>
-        </div>
-
+      <div class="col-md-12">
+        <ui-view></ui-view>
       </div>
     </div>
   </body>
