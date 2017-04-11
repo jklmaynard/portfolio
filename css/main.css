@@ -17,13 +17,32 @@ h1 a {
   font-size: 34px;
   text-decoration: none;
 }
-.container {
-  min-width: 70%;
-  padding-top: 10px;
+img {
+  width: 100%;
+}
+.sites-container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .site-detail-container {
-  border-bottom-style: groove;
-  padding: 10px 0 10px 0;
+  height: 300px;
+  margin: 10px;
+  padding: 5px;
+  width: 30%;
+}
+.sites-container a {
+  text-decoration: none;
+}
+.site-detail-information {
+  height: 100%;
+  width: 100%;
+}
+.site-image {
+  height: 100%;
+  text-align: center;
+  width: 100%;
 }
 #page-header {
   border-bottom-style: groove;

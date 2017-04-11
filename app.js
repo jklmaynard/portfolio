@@ -16,12 +16,14 @@ function($stateProvider, $urlRouterProvider) {
     });
   $urlRouterProvider.otherwise('home');
 }])
-
 .controller('MainCtrl', [
   '$scope',
   'sites',
   function($scope, sites) {
     $scope.sites = sites.sites;
+    $scope.displayImage = function() {
+      $scope.hover = true;
+    }
   }
 ])
 .controller('SitesCtrl', [
