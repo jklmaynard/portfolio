@@ -37,7 +37,7 @@ img {
 }
 #page-header {
   border-bottom-style: groove;
-  padding-top: 5px;
+  padding-bottom: 20px;
 }
 #page-header a {
   text-decoration: none;
@@ -53,4 +53,10 @@ img {
 /******* SITE DETAIL PAGE *******/
 .site-detail-page-container a {
   color: black;
+}
+.site-partial-image {
+  display: block;
+  margin-left: 200px;
+  margin-top: 20px;
+  width: 70%
 }
