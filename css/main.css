@@ -11,6 +11,9 @@ h1 a {
 img {
   width: 100%;
 }
+li {
+  font-size: 16px;
+}
 .sites-container {
   align-items: center;
   display: flex;
@@ -59,4 +62,7 @@ img {
   margin-left: 200px;
   margin-top: 20px;
   width: 70%
+}
+.site-summary-container {
+  margin-bottom: 30px;
 }
