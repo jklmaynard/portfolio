@@ -6,12 +6,12 @@ function($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('home', {
       url: '/home',
-      templateUrl: '_home.html',
+      templateUrl: 'home_partial.html',
       controller: 'MainCtrl'
     })
     .state('sites', {
       url: '/sites/{id}',
-      templateUrl: '_sites.html',
+      templateUrl: 'sites_partial.html',
       controller: 'SitesCtrl'
     });
   $urlRouterProvider.otherwise('home');
