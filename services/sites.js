@@ -3,6 +3,23 @@ angular.module('portfolio')
   var obj = {
     sites: [
       {
+        name: "Nike Experiment & Optimization",
+        type: "A/B/n Testing and Analytics Script",
+        website_url: "http://www.nike.com/",
+        github_url: "http://web.nike.com/neo/main/neo.js",
+        image: "img/nike-experiments.jpg",
+        summary: "On a continuous delivery Kanban model, I worked on a small team delivering a light-weight client side analytics and A/B testing script called NEO.js, 'Nike Experimentation and Optimization'.  NEO.js utilized browser cookies to offer different eCommerce experiences based on consumer knowledge strategy, to understand and lift conversion rates.  NEO.js also was the hub for remarketing pixels, and analytics scripts such as Adobe Omniture and ClickTale.",
+        details: [
+          {text: "Light-weight client side script provided ease for experimentation"},
+          {text: "Continuous delivery and automated unit testing (nightwatch)"},
+          {text: "DOM manipulation usually based on event listeners"}
+        ],
+        improvements: [
+          {text: "No back end: data either remained in the browser or was networked to analytics hubs (such as Adobe)"},
+          {text: "Although NEO.js was fast, it is lower on the stack so an experiment would 'flicker' between the control to the variant (sometimes noticeable)"}
+        ]
+      },
+      {
         name: "Mother Foucault's Bookshop",
         type: "Angular with Rails",
         website_url: "http://www.motherfoucaultsbookshop.com/",
